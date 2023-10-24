@@ -8,9 +8,9 @@ root_data_dir = 'C:\\Users\\User\\Desktop\\PythonForLab\\PD\\Lab2\\dataset'
 project_path = 'C:\\Users\\User\\Desktop\\PythonForLab\\PD\\Lab3'
 
 # Создание или открытие CSV-файла для записи аннотаций
-with open("annotation.csv", mode="w", newline='') as annotation_file:
+with open("annotation.csv", "w", newline='') as annotation_file:
     annotation_writer = csv.writer(annotation_file)
-    annotation_writer.writerow(['C:\\Users\\User\\Desktop\\PythonForLab\\PD\\dataset', '..\\PD\\Lab2\\dataset', 'cat'])
+    annotation_writer.writerow(['C:\\Users\\User\\Desktop\\PythonForLab\\PD\\Lab2\\dataset', '..\\PD\\Lab2\\dataset', 'class'])
 
     # Пройти по всем файлам и директориям в корневой директории
     for root, dirs, files in os.walk(root_data_dir):
